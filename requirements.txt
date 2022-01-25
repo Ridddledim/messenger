@@ -1,0 +1,5 @@
+wemake-python-styleguide==0.15.3
+flake8==3.9.2
+black==21.9b0
+isort==5.10.1
+mypy==0.910
