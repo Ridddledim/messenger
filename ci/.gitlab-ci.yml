@@ -1,0 +1,15 @@
+image: "python:3.10"
+before_script:
+  - python --version
+  - pip install -r requirements.txt
+
+stages:
+  - linters
+  - test
+  - run
+
+linters:
+  stage: linters
+  script:
+    - make mypy
+    - make lint
