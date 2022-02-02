@@ -12,7 +12,7 @@ venv/bin/activate: ## Alias for virtual environment
 
 setup: venv/bin/activate ## Project setup
 	. venv/bin/activate; pip install pip==${PIP_VERSION} wheel setuptools
-	. venv/bin/activate; pip install --exists-action w -Ur requirements.txt
+	. venv/bin/activate; pip install --exists-action w -Ur requirements/dev.txt
 
 mypy: venv/bin/activate ## Run mypy
 	. venv/bin/activate; mypy ./
