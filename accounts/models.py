@@ -34,14 +34,14 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser):
-    username = models.CharField(_("username"), max_length=150, blank=True, null=True)
+    username = models.CharField(_("username"), max_length=150, blank=True)
     email = models.EmailField(_("email address"), unique=True)
     date_joined = models.DateTimeField(_("created at"), default=timezone.now)
     updated_at = models.DateTimeField(_("updated at"), auto_now=True)
     dob = models.DateField(_("date of birth"), blank=True, null=True)
 
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS: list = []
 
     objects = UserManager()
 
