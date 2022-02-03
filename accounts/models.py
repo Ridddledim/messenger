@@ -43,7 +43,7 @@ class User(AbstractUser):
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS: list = []
 
-    objects = UserManager()
+    objects = UserManager()  # type: ignore
 
     def __str__(self):
         """String representation of User in admin."""

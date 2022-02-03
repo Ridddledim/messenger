@@ -21,7 +21,6 @@ lint: venv/bin/activate ## Run linter
 	. venv/bin/activate; flake8 ./
 
 db: venv/bin/activate ## Run migrations
-	. venv/bin/activate; python manage.py makemigrations
 	. venv/bin/activate; python manage.py migrate
 
 run: venv/bin/activate ## Local Run
