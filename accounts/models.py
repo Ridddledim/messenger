@@ -54,6 +54,4 @@ class User(AbstractUser):
         return f"{self.first_name} {self.last_name}".strip()
 
     def get_age(self):
-        if self.dob is None:
-            return None
-        return (timezone.now() - self.dob).years
+        return (timezone.now() - self.dob).years if self.dob else None
