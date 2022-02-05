@@ -1,7 +1,7 @@
 image: "python:3.10"
 before_script:
   - python --version
-  - pip install -r requirements.txt
+  - pip install -r requirements/dev.txt
 
 stages:
   - linters
