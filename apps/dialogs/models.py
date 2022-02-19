@@ -12,7 +12,7 @@ class MessageManager(models.Manager):
 
 
 class Thread(models.Model):
-    participants = models.ManyToManyField(User)
+    participants = models.ManyToManyField(User, related_name="user_thread")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # installed apps
+    "rest_framework",
+
     # project apps
     "apps.accounts",
     "apps.dialogs",
