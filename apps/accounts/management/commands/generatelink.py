@@ -4,7 +4,7 @@ from django.core.management import BaseCommand
 from django.urls import reverse
 
 
-class Command(BaseCommand):
+class ChangePasswordCommand(BaseCommand):
     help = "Generate link for password change"
 
     def add_arguments(self, parser):
