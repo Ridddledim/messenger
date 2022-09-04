@@ -5,7 +5,7 @@
 		black \
 		help
 
-PIP_VERSION = 21.3.1
+PIP_VERSION = 22.2.2
 
 venv/bin/activate: ## Alias for virtual environment
 	python -m venv venv
