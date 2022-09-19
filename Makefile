@@ -7,6 +7,9 @@
 
 PIP_VERSION = 22.2.2
 
+start:
+	sudo service docker  start
+
 venv/bin/activate: ## Alias for virtual environment
 	python -m venv venv
 
